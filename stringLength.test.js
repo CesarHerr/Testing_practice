@@ -1,7 +1,7 @@
 const stringLength = require('./stringLength');
 
 
-test('characters count, "testing" to equal 3', () => {
+test('case 1, characters count, "testing" to equal 3', () => {
   let testString = 'testing'; 
   let expected = 7;
   
@@ -10,14 +10,12 @@ test('characters count, "testing" to equal 3', () => {
   expect(result).toBe(expected);
 });
 
-test('characters count, " " to equal 3', () => {
+test('case 2, characters count, " " to equal 3', () => {
   let testString = ''; 
-   
   expect(() => stringLength()).toThrow(Error);
 });
 
-test('characters count, "paralelepipedo" to equal 3', () => {
+test('case 3, characters count, "paralelepipedo" to equal 3', () => {
   let testString = 'paralelepipedo'; 
-   
   expect(() => stringLength()).toThrow(Error);
 });

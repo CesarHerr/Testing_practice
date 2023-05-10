@@ -1,7 +1,9 @@
 let stringLength = (string) => {
-  if(string.stringLength < 1 || string.stringLength > 10 ){
-    throw new Error('Input string must be at least 1 character long');
+  if(string.length < 1 || string.length > 10) {
+      throw new Error('Input string must be at least 1 and not longer than 10 characters');
+  } else {
+      return string.length;
   }
-  return string.length;
 }
+
 module.exports = stringLength;
